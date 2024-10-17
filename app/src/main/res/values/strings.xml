@@ -14,5 +14,9 @@
     <string name="pseudo">Pseudonyme :</string>
     <string name="validate">Valider</string>
     <string name="demo_product_name">Nom du produit</string>
+    <string name="remove_button_description">Bouton diminuer la quantité</string>
+    <string name="add_button_description">Bouton augmenter la quantité</string>
+    <string name="quantity_prefix">Quantité actuelle,</string>
+    <string name="new_quantity_announce">Nouvelle quantité,</string>
 
 </resources>
