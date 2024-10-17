@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">P9A11y</string>
+    <string name="app_name">P9E_GourmetEats</string>
     <string name="cas_3_formulaire_de_connexion">Cas 3: Formulaire de connexion</string>
     <string name="cas_2_carte_de_suggestion_de_recettes">Cas 2 : Carte de suggestion de recettes</string>
     <string name="cas_1_bouton_d_ajout_au_panier">Cas 1 : Bouton d\'ajout au panier</string>
