@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        tools:ignore="ContentDescription">
+        android:contentDescription="@string/recipe_card_description">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -75,9 +75,11 @@
                 android:text="@string/ajouter"
                 android:textColor="@color/white"
                 android:textSize="16sp"
+                android:contentDescription="@string/add_to_basket_button_description"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/productTitle" />
+                app:layout_constraintTop_toBottomOf="@id/productTitle"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

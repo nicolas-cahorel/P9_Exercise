@@ -34,8 +34,7 @@ class Case2Activity : AppCompatActivity() {
 
         binding.recipeCard.setOnClickListener {
             binding.favoriteButton.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
-            binding.addRecipeToBasket.importantForAccessibility =
-                View.IMPORTANT_FOR_ACCESSIBILITY_YES
+            binding.addRecipeToBasket.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
             // TODO navigate to recipe screen
         }
     }

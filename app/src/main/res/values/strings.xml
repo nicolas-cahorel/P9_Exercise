@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">P9E_GourmetEats</string>
     <string name="cas_3_formulaire_de_connexion">Cas 3: Formulaire de connexion</string>
     <string name="cas_2_carte_de_suggestion_de_recettes">Cas 2 : Carte de suggestion de recettes</string>
@@ -25,5 +26,7 @@
     <string name="removedFromFavoritesMessage">Recette retirée des favoris</string>
     <string name="nameMinimalLength">Minimum 3 caractères</string>
     <string name="nameValid">Format valide</string>
+    <string name="add_to_basket_button_description">Ajouter au panier</string>
+    <string name="recipe_card_description">Cookies au chocolat : Ajouter aux favoris et au panier</string>
 
 </resources>
