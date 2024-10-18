@@ -47,6 +47,7 @@
         android:layout_gravity="center"
         android:importantForAccessibility="yes"
         android:text="@string/validate"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </LinearLayout>

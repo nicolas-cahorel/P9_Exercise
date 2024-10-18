@@ -14,6 +14,7 @@
         android:layout_marginHorizontal="8dp"
         android:layout_marginVertical="16dp"
         android:text="@string/cas_1_bouton_d_ajout_au_panier"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <Button
@@ -23,6 +24,7 @@
         android:layout_marginHorizontal="8dp"
         android:layout_marginVertical="16dp"
         android:text="@string/cas_2_carte_de_suggestion_de_recettes"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <Button
@@ -32,6 +34,7 @@
         android:layout_marginHorizontal="8dp"
         android:layout_marginVertical="16dp"
         android:text="@string/cas_3_formulaire_de_connexion"
+        android:textColor="@color/white"
         android:textSize="16sp"
 
         />
