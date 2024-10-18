@@ -43,14 +43,14 @@ class Case2Activity : AppCompatActivity() {
     private fun setFavouriteButtonIcon(isFavourite: Boolean) {
         if (isFavourite) {
             binding.favoriteButton.setImageResource(R.drawable.ic_favorite_on)
+            binding.favoriteButton.announceForAccessibility(getString(R.string.addedToFavoritesMessage))
             binding.favoriteButton.contentDescription =
                 getString(R.string.removeFromFavoritesDescription)
-            binding.favoriteButton.announceForAccessibility(getString(R.string.addedToFavoritesMessage))
         } else {
             binding.favoriteButton.setImageResource(R.drawable.ic_favorite_off)
+            binding.favoriteButton.announceForAccessibility(getString(R.string.removedFromFavoritesMessage))
             binding.favoriteButton.contentDescription =
                 getString(R.string.addToFavoritesDescription)
-            binding.favoriteButton.announceForAccessibility(getString(R.string.removedFromFavoritesMessage))
         }
     }
 }
