@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Case2Activity"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    tools:context=".Case2Activity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cas_2"
-        android:textSize="40sp"/>
-
+        android:textSize="40sp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/recipeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp">
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:padding="4dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="4dp">
 
             <ImageView
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/cookie_with_contrast"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:scaleType="centerCrop"
-                />
+                tools:ignore="ContentDescription" />
 
             <ImageButton
                 android:id="@+id/favorite_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_favorite_off"
                 android:backgroundTint="#99FFFFFF"
-                app:layout_constraintTop_toTopOf="@id/productImage"
-                app:layout_constraintEnd_toEndOf="@id/productImage"
                 android:padding="12dp"
-                />
+                android:src="@drawable/ic_favorite_off"
+                app:layout_constraintEnd_toEndOf="@id/productImage"
+                app:layout_constraintTop_toTopOf="@id/productImage"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/productTitle"
                 style="@style/TextAppearance.MaterialComponents.Headline4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
                 android:text="@string/demo_cookie_text"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/productImage" />
 
-                <Button
-                    android:id="@+id/addRecipeToBasket"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/ajouter"
-                    android:drawableEnd="@drawable/ic_add"
-                    android:drawableTint="@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/productTitle"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+            <Button
+                android:id="@+id/addRecipeToBasket"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:drawableEnd="@drawable/ic_add"
+                android:drawableTint="@color/white"
+                android:text="@string/ajouter"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productTitle" />
 
-                    />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </androidx.cardview.widget.CardView>
 
