@@ -18,17 +18,21 @@
         android:id="@+id/recipeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        tools:ignore="ContentDescription">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="4dp">
+            android:importantForAccessibility="no"
+            android:padding="4dp"
+            tools:ignore="ContentDescription">
 
             <ImageView
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:importantForAccessibility="no"
                 android:scaleType="centerCrop"
                 android:src="@drawable/cookie_with_contrast"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
+                android:importantForAccessibility="yes"
                 android:text="@string/demo_cookie_text"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +68,7 @@
             <Button
                 android:id="@+id/addRecipeToBasket"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:drawableEnd="@drawable/ic_add"
                 android:drawableTint="@color/white"

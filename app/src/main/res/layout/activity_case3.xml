@@ -26,10 +26,11 @@
     <EditText
         android:id="@+id/pseudoEdit"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:autofillHints="username"
         android:importantForAccessibility="yes"
         android:inputType="text"
+        android:minHeight="50dp"
         android:textSize="16sp" />
 
     <TextView
@@ -43,7 +44,7 @@
     <Button
         android:id="@+id/validateButton"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:importantForAccessibility="yes"
         android:text="@string/validate"
