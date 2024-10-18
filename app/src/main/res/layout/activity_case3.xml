@@ -26,7 +26,7 @@
     <EditText
         android:id="@+id/pseudoEdit"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="50dp"
         android:autofillHints="username"
         android:importantForAccessibility="yes"
         android:inputType="text"
