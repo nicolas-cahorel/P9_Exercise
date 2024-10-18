@@ -1,7 +1,6 @@
 package fr.opc.practice.p9a11y
 
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import fr.opc.practice.p9a11y.databinding.ActivityCase1Binding

@@ -18,6 +18,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
         android:labelFor="@+id/pseudoEdit"
         android:text="@string/pseudo"
         android:textSize="16sp" />
@@ -26,15 +27,17 @@
         android:id="@+id/pseudoEdit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:textSize="16sp"
         android:autofillHints="username"
-        android:inputType="text" />
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/pseudoValidation"
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
         android:textSize="14sp" />
 
     <Button
@@ -42,7 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_gravity="center"
-        android:textSize="16sp"
-        android:text="@string/validate" />
+        android:importantForAccessibility="yes"
+        android:text="@string/validate"
+        android:textSize="16sp" />
 
 </LinearLayout>

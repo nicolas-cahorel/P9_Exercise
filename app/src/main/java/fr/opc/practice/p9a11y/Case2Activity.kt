@@ -34,7 +34,8 @@ class Case2Activity : AppCompatActivity() {
 
         binding.recipeCard.setOnClickListener {
             binding.favoriteButton.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
-            binding.addRecipeToBasket.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
+            binding.addRecipeToBasket.importantForAccessibility =
+                View.IMPORTANT_FOR_ACCESSIBILITY_YES
             // TODO navigate to recipe screen
         }
     }
@@ -42,11 +43,13 @@ class Case2Activity : AppCompatActivity() {
     private fun setFavouriteButtonIcon(isFavourite: Boolean) {
         if (isFavourite) {
             binding.favoriteButton.setImageResource(R.drawable.ic_favorite_on)
-            binding.favoriteButton.contentDescription = getString(R.string.removeFromFavoritesDescription)
+            binding.favoriteButton.contentDescription =
+                getString(R.string.removeFromFavoritesDescription)
             binding.favoriteButton.announceForAccessibility(getString(R.string.addedToFavoritesMessage))
         } else {
             binding.favoriteButton.setImageResource(R.drawable.ic_favorite_off)
-            binding.favoriteButton.contentDescription = getString(R.string.addToFavoritesDescription)
+            binding.favoriteButton.contentDescription =
+                getString(R.string.addToFavoritesDescription)
             binding.favoriteButton.announceForAccessibility(getString(R.string.removedFromFavoritesMessage))
         }
     }
