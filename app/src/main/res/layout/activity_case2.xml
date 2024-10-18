@@ -29,7 +29,7 @@
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/cookie_amirali_mirhashemian_unsplash"
+                android:src="@drawable/cookie_with_contrast"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -37,14 +37,13 @@
                 />
 
             <ImageButton
-                android:id="@+id/favouriteButton"
+                android:id="@+id/favorite_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_favourite_off"
+                android:src="@drawable/ic_favorite_off"
                 android:backgroundTint="#99FFFFFF"
                 app:layout_constraintTop_toTopOf="@id/productImage"
                 app:layout_constraintEnd_toEndOf="@id/productImage"
-                android:contentDescription="@string/cd_ajouter_aux_favoris"
                 android:padding="12dp"
                 />
 

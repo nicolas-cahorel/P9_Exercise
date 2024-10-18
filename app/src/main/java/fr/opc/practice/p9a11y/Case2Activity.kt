@@ -1,6 +1,7 @@
 package fr.opc.practice.p9a11y
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import fr.opc.practice.p9a11y.databinding.ActivityCase2Binding
@@ -16,7 +17,8 @@ class Case2Activity : AppCompatActivity() {
 
         var isFavourite = false
         setFavouriteButtonIcon(isFavourite)
-        binding.favouriteButton.setOnClickListener {
+
+        binding.favoriteButton.setOnClickListener {
             isFavourite = !isFavourite
             setFavouriteButtonIcon(isFavourite)
         }
@@ -26,16 +28,26 @@ class Case2Activity : AppCompatActivity() {
                 .show()
         }
 
+        // Make favoriteButton and addRecipeToBasket ignored by TalkBack
+        binding.favoriteButton.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+        binding.addRecipeToBasket.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+
         binding.recipeCard.setOnClickListener {
+            binding.favoriteButton.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
+            binding.addRecipeToBasket.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
             // TODO navigate to recipe screen
         }
     }
 
     private fun setFavouriteButtonIcon(isFavourite: Boolean) {
         if (isFavourite) {
-            binding.favouriteButton.setImageResource(R.drawable.ic_favourite_on)
+            binding.favoriteButton.setImageResource(R.drawable.ic_favorite_on)
+            binding.favoriteButton.contentDescription = getString(R.string.removeFromFavoritesDescription)
+            binding.favoriteButton.announceForAccessibility(getString(R.string.addedToFavoritesMessage))
         } else {
-            binding.favouriteButton.setImageResource(R.drawable.ic_favourite_off)
+            binding.favoriteButton.setImageResource(R.drawable.ic_favorite_off)
+            binding.favoriteButton.contentDescription = getString(R.string.addToFavoritesDescription)
+            binding.favoriteButton.announceForAccessibility(getString(R.string.removedFromFavoritesMessage))
         }
     }
 }

@@ -18,5 +18,10 @@
     <string name="add_button_description">Bouton augmenter la quantité</string>
     <string name="quantity_prefix">Quantité actuelle,</string>
     <string name="new_quantity_announce">Nouvelle quantité,</string>
+    <string name="cd_retirer_des_favoris">Retirer_des_favoris</string>
+    <string name="addToFavoritesDescription">Ajouter aux favoris</string>
+    <string name="removeFromFavoritesDescription">Retirer des favoris</string>
+    <string name="addedToFavoritesMessage">Recette ajoutée aux favoris</string>
+    <string name="removedFromFavoritesMessage">Recette retirée des favoris</string>
 
 </resources>
